@@ -20,17 +20,10 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS solves (
                 )''')
 
 cursor.execute('''INSERT INTO assignments(name, description) VALUES ("2.1 SQL task", "tasks described in solution")''')
-cursor.execute('''INSERT INTO solves(solution, date, as_id) VALUES ("https://github.com/code50/228491393/blob/12e1f329620de4866e37a6f262c9ad05398ed88d/SQL/script.sql", 2025-11-14, 1)''')
+cursor.execute('''INSERT INTO solves(solution, date, as_id) VALUES ("https://github.com/00nyx00/nyxportfolio/blob/3fc76cf12f1e184b28ffd8249f8566516ea9c10f/SQL/script.sql", "2025-11-14", 1)''')
 
 
-
-'''
-# Get results and show
-results = cursor.fetchall()
-for row in results:
-    print("Name:", row[0], "| Age:", row[1], "| Address:", row[2])
-'''
 conn.commit()
 conn.close()
 
-print("Nice message of what you have done.")
+print("Database has been created yoohoo.")
