@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title> Contact Nyx</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+         <nav class="navbar navbar-light navbar-fixed-top" style="background-color: rgb(39, 0, 19);">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="portfolio.html"><img src="images/nyxlogo.png" height="55px"> </a>
+            </div>
+            <ul class="nav navbar-nav">
+            <li><a href="portfolio.html">home</a></li>
+            <li><a href="learnaboutme.html" >me</a></li>
+            <li><a href="myprojects.html">projects</a></li>
+            <li class="active"><a href="#">contact</a></li>
+            </ul>
+        </div>
+        </nav>
+        <div class="pagetitle">
+            <h1> Contact Me </h1>
+        </div>
+        <p>
+            Don't you dare...
+        </p>
+        <form id="contactForm" method="get">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+        <script>
+            document.getElementById("contactForm").addEventListener("submit", function() {
+            alert("What did I just say👹");
+        });
+        </script>
+    </body>
+</html>
