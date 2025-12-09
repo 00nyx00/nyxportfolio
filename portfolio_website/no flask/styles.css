@@ -195,7 +195,7 @@ a :hover {
 /*experiment page styles*/
 #experimentbody{
   display: grid;
-  grid-template-rows: 10% 100px 1fr 80px 10%;
+  grid-template-rows: 50px 100px 1fr 50px 50px;
   grid-template-columns: 10% 80% 10%;
   grid-template-areas:
     ". . ."
@@ -204,7 +204,7 @@ a :hover {
     ". . ."
     "footer footer footer";
   margin: 0;
-  background-image: linear-gradient(rgb(255, 236, 245), rgb(255, 200, 240));
+  background-image: linear-gradient(rgb(255, 236, 245), rgb(255, 200, 240), rgb(39, 0, 19));
 }
 
 .experimentheader{
@@ -215,4 +215,14 @@ a :hover {
   padding: 24px 26px;
   background-color: rgb(39, 0, 19);
 
+}
+
+.experimentmain{
+  grid-area:main;
+  min-height: 800px;
+}
+
+.experimentfooter{
+  grid-area:footer;
+  color: white;
 }

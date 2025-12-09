@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block comments %}
+    <div class="commentgrid">
+        {% for row in comments %}
+        <div class="comment">
+
+            <h3>{{ row.name }} <small>{{ row.timestamp }}</small> </h3>
+            
+
+            <p>{{ row.comment }}</p>
+        </div> <!--end comment-->
+        {% endfor %}
+    </div> <!--end commentgrid-->
+{% endblock %}

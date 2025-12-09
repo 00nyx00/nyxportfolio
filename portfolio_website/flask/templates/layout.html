@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='myappstyles.css')}}">
+        <title> Nyx's Comments</title>
+        <meta charset="utf-8">
+    </head>
+    <body id="experimentbody">
+        <header class="experimentheader">
+            <img src="{{ url_for('static', filename='nyxlogo.png')}}" height="60px">
+        </header>
+        <main class="experimentmain">
+            <h1> Nyx's comment board</h1>
+            <p>Share your thoughts, don't be shy</p>
+            <form method="POST" action="/">
+                <input type="text" name="name" placeholder="nickname" required>
+                <br><br>
+                <textarea name="comment" placeholder="Type your comment here..." required></textarea>
+                <br><br>
+                <input type="submit" value="Post">
+            </form>
+            {% block comments %}
+            {% endblock %}
+        </main>
+        <footer class="experimentfooter">
+            &copy; Nyx made this, please don't steal it.👹💋
+        </footer>
+
+    </body>
+</html>
