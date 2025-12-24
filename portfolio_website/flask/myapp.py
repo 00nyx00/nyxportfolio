@@ -14,5 +14,9 @@ def main():
     comments = db.get_comments()
     return render_template('comments.html', comments=comments)
 
+@app.route('/apple', methods=['GET'])
+def apple():
+    return render_template('apple.html')
+
 if __name__ == "__main__":
     app.run(debug=True)

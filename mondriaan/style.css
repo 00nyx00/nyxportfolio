@@ -1,0 +1,30 @@
+#base{
+    width: 900px;
+    height: 900px;
+    background-color: white;
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr 6fr 3fr 3fr 1fr;
+    grid-template-rows: 2fr 4fr 4fr 2fr 2fr 1fr 1fr;
+    border: 5px solid black;
+} 
+
+.white{
+    background-color: white;
+    border: 5px solid black;
+}
+.red{
+    background-color: red;
+    border: 5px solid black;
+}
+.blue{
+    background-color: blue;
+    border: 5px solid black;
+}
+.yellow{
+    background-color: yellow;
+    border: 5px solid black;
+}
+.black{
+    background-color: black;
+    border: 5px solid black;
+}
